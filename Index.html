@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+    <link type="text/css" rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div id="progressBar"></div>
+    <div id="scrollPath"></div>
+<div id="content"><h1>Lorem ipsum </h1><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum neque nulla, in viverra ante convallis a. Vivamus posuere lectus sit amet eleifend finibus. Etiam non facilisis enim. Integer odio dui, iaculis ac luctus tincidunt, commodo sodales erat. Duis nec vulputate sem. Suspendisse hendrerit porttitor leo eu tincidunt. Mauris gravida aliquam sapien, ut bibendum turpis viverra nec.<br><br>
+  
+  Donec elit odio, aliquam ut augue ac, aliquet cursus sem. Sed quis placerat nunc. Aliquam hendrerit eros est, quis venenatis enim euismod sed. Sed hendrerit, mauris malesuada rhoncus porttitor, felis quam facilisis augue, id consequat ligula mi ac ligula. Etiam cursus commodo urna, nec interdum est porttitor ut. Donec massa ipsum, dapibus et nibh non, euismod condimentum neque. Sed faucibus eu velit vel sagittis. Donec fermentum nulla quis aliquet placerat. Ut luctus consequat iaculis. Ut faucibus est elit, in iaculis augue euismod sed. Sed eu dignissim sapien, ac commodo odio. Cras ullamcorper neque vel augue finibus dictum. Pellentesque feugiat elit ut est feugiat, non accumsan risus sodales. Integer eu nisl sit amet augue dignissim maximus et et mauris. Sed nec tellus odio.<br><br>
+  
+  Curabitur id dignissim magna. Nunc accumsan pretium dolor, vitae bibendum eros laoreet quis. Sed posuere nunc nibh, in fringilla neque euismod et. Cras dignissim iaculis lacus eu commodo. Curabitur rutrum erat sit amet justo accumsan, eget viverra ipsum commodo. Duis auctor nunc in nulla suscipit posuere. Proin sagittis pharetra sapien, ut interdum augue lobortis id. Duis efficitur blandit vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet nisl fermentum mauris faucibus eleifend. Fusce varius, velit sollicitudin ultrices convallis, metus nibh convallis mi, at tempor elit leo a neque. Duis sem mi, dignissim ac odio sed, tempor convallis ligula. Phasellus vel nulla ultrices, tincidunt lacus eget, sollicitudin lectus. Proin mauris erat, dictum vel nisl at, dictum suscipit neque.<br><br>
+  
+  Suspendisse dignissim sit amet tortor sed pellentesque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas scelerisque lobortis nunc non vehicula. Suspendisse commodo ex tellus, eu sollicitudin libero dapibus cursus. Nunc urna tortor, maximus semper eleifend sodales, sagittis porttitor enim. Mauris urna turpis, molestie quis malesuada ut, hendrerit a lorem. Praesent varius, dolor tristique porttitor tincidunt, velit lacus fringilla nisl, sed ornare ipsum ipsum a dui. Etiam luctus fermentum lorem a bibendum. In nulla ipsum, consequat et volutpat vel, eleifend sed lacus. Sed rutrum leo sit amet malesuada accumsan. Vivamus dapibus nibh metus.<br><br>
+  
+  Donec consectetur, sem eget pretium viverra, nibh lacus faucibus purus, ut lacinia arcu massa vitae purus. Ut vestibulum leo neque, a commodo dolor rhoncus at. Maecenas ac faucibus sem, ut maximus turpis. Proin nulla ipsum, pellentesque quis interdum id, sagittis ac neque. Etiam et dui ac metus bibendum blandit. Nam vitae sapien at metus porttitor faucibus. Phasellus et sem urna. Ut vitae velit malesuada, dignissim enim finibus, blandit neque. Aliquam posuere nisl malesuada bibendum efficitur. In nec pellentesque justo, euismod pharetra enim. Phasellus commodo tincidunt felis. Quisque vitae dictum elit. Fusce consequat est vel rutrum auctor. </div>
+    <script type="text/javascript">
+        
+    var progress = document.getElementById('progressBar');
+        progress.style.height = 0 + "%";
+var totalHeight = document.body.scrollHeight - window.innerHeight;
+window.onscroll = function(){
+  var progressHeight = (window.pageYOffset / totalHeight) * 100;
+  progress.style.height = progressHeight + "%";
+}
+    </script>
+</body>
+</html>
