@@ -24,6 +24,7 @@
 }
 ::-webkit-scrollbar {
   width: 0;
+    display: none;
 }
 #scrollPath {
   position: fixed;
